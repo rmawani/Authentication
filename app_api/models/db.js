@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
 var dbURI = 'mongodb://rizmawani:Povray1!@ds111589.mlab.com:11589/heroku_xddds4bp';
-if (process.env.NODE_ENV === 'production') {
-  dbURI = process.env.MONGOLAB_URI;
-}
+//if (process.env.NODE_ENV === 'production') {
+//  dbURI = process.env.MONGOLAB_URI;
+//}
 
 mongoose.connect(dbURI);
 
