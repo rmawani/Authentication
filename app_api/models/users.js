@@ -7,6 +7,14 @@ function toLower (str) {
 }
 
 var userSchema = new mongoose.Schema({
+  FirstName: {
+    type: String,
+    required: true
+  },
+  LastName: {
+    type: String,
+    required: true
+  },
   EmailAddress: {
     type: String,
     set: toLower,
@@ -16,14 +24,6 @@ var userSchema = new mongoose.Schema({
   CellPhoneNumber: {
     type: String,
     unique: true,
-    required: true
-  },
-  FirstName: {
-    type: String,
-    required: true
-  },
-  LastName: {
-    type: String,
     required: true
   },
   CompanyName: {
