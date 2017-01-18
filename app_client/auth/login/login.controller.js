@@ -21,7 +21,6 @@
         })
         .then(function(){
           $location.path('profile');
-          console.log($window.localStorage['mean-token']);
         });
     };
 
