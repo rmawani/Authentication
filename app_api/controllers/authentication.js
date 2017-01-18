@@ -18,9 +18,14 @@ module.exports.register = function(req, res) {
 
   var user = new User();
 
-  user.name = req.body.name;
-  user.email = req.body.email;
-
+  user.FirstName = req.body.FirstName;
+  user.LastName = req.body.LastName;
+  user.EmailAddress = req.body.EmailAddress;
+  user.CellPhoneNumber = req.body.CellPhoneNumber;
+  user.CompanyName = req.body.CompanyName;
+  user.EmployeeID = req.body.EmployeeID;
+  user.City = req.body.City;
+  user.Province = req.body.Province;
   user.setPassword(req.body.password);
 
   user.save(function(err) {

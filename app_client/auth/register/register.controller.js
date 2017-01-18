@@ -9,8 +9,14 @@
     var vm = this;
 
     vm.credentials = {
-      name : "",
-      email : "",
+      FirstName: "",
+      LastName : "",
+      EmailAddress: "",
+      CellPhoneNumber: "",
+      CompanyName: "",
+      EmployeeID: "",
+      City: "",
+      Province: "",
       password : ""
     };
 

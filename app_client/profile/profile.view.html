@@ -5,16 +5,40 @@
     
      <div class="col-md-6">
 
-      <h1 class="form-signin-heading">Your profile</h1>
+      <h1 class="form-signin-heading">Your Profile</h1>
 
       <form  class="form-horizontal">
         <div class="form-group">
-          <label class="col-sm-3 control-label">Full name</label>
-          <p class="form-control-static">{{ vm.user.name }}</p>
+          <label class="col-sm-3 control-label">First Name</label>
+          <p class="form-control-static">{{ vm.user.FirstName }}</p>
         </div>
         <div class="form-group">
-          <label class="col-sm-3 control-label">Email</label>
-          <p class="form-control-static">{{ vm.user.email }}</p>
+          <label class="col-sm-3 control-label">Last name</label>
+          <p class="form-control-static">{{ vm.user.LastName }}</p>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Email Address</label>
+          <p class="form-control-static">{{ vm.user.EmailAddress }}</p>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Cell Phone Number</label>
+          <p class="form-control-static">{{ vm.user.CellPhoneNumber }}</p>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Company Name</label>
+          <p class="form-control-static">{{ vm.user.CompanyName }}</p>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Employee Id</label>
+          <p class="form-control-static">{{ vm.user.EmployeeID }}</p>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">City</label>
+          <p class="form-control-static">{{ vm.user.City }}</p>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Province</label>
+          <p class="form-control-static">{{ vm.user.Province }}</p>
         </div>
       </form>
 

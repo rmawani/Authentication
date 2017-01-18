@@ -37,13 +37,19 @@
         payload = $window.atob(payload);
         payload = JSON.parse(payload);
         return {
-          email : payload.email,
-          name : payload.name
+          FirstName: payload.FirstName,
+          LastName: payload.LastName,
+          EmailAddress: payload.EmailAddress,
+          CellPhoneNumber: payload.CellPhoneNumber,
+          CompanyName: payload.CompanyName,
+          EmployeeID: payload.EmployeeID,
+          City: payload.City,
+          Province : payload.Province
         };
       }
     };
 
-    register = function(user) {
+    register = function (user) {
       return $http.post('/api/register', user).success(function(data){
         saveToken(data.token);
       });

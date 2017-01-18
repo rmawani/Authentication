@@ -8,12 +8,36 @@
       <p class="lead">Already a member? Please <a href="login">log in</a> instead.</p>
       <form ng-submit="vm.onSubmit()">
         <div class="form-group">
-          <label for="name">Full name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name" ng-model="vm.credentials.name">
+          <label for="FirstName">First Name</label>
+          <input type="text" class="form-control" id="FirstName" placeholder="Enter your First Name" ng-model="vm.credentials.FirstName">
         </div>
         <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="vm.credentials.email">
+          <label for="LastName">Last Name</label>
+          <input type="text" class="form-control" id="LastName" placeholder="Enter your Last Name" ng-model="vm.credentials.LastName">
+        </div>
+        <div class="form-group">
+          <label for="EmailAddress">Email address</label>
+          <input type="email" class="form-control" id="EmailAddress" placeholder="Enter your Email Address" ng-model="vm.credentials.EmailAddress">
+        </div>
+        <div class="form-group">
+          <label for="CellPhoneNumber">Email address</label>
+          <input type="text" class="form-control" id="CellPhoneNumber" placeholder="Enter your Cell Phone Number in the following format: +11234567890" ng-model="vm.credentials.CellPhoneNumber">
+        </div>
+        <div class="form-group">
+          <label for="CompanyName">Last Name</label>
+          <input type="text" class="form-control" id="CompanyName" placeholder="Enter Name of the Company you work for" ng-model="vm.credentials.CompanyName">
+        </div>
+        <div class="form-group">
+          <label for="EmployeeID">Last Name</label>
+          <input type="text" class="form-control" id="EmployeeID" placeholder="Enter your Employee ID" ng-model="vm.credentials.EmployeeID">
+        </div>
+        <div class="form-group">
+          <label for="City">Last Name</label>
+          <input type="text" class="form-control" id="City" placeholder="Enter the City in which the Company you work for is located" ng-model="vm.credentials.City">
+        </div>
+        <div class="form-group">
+          <label for="Province">Last Name</label>
+          <input type="text" class="form-control" id="Province" placeholder="Enter the Province in which the Company you work for is located" ng-model="vm.credentials.Province">
         </div>
         <div class="form-group">
           <label for="password">Password</label>
