@@ -7,13 +7,6 @@ function toLower (str) {
 }
 
 var userSchema = new mongoose.Schema({
-  UserID: {
-    type: Number,
-    unique: true,
-    index: { unique: true },
-    auto: true,
-    required: true
-  },
   EmailAddress: {
     type: String,
     set: toLower,
@@ -75,7 +68,6 @@ userSchema.methods.generateJwt = function () {
 
   return jwt.sign({
     _id: this._id,
-    UserID: this.UserID,
     FirstName: this.FirstName,
     LastName: this.LastName,
     EmailAdress: this.EmailAdress,
