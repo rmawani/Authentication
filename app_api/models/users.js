@@ -79,7 +79,7 @@ userSchema.methods.generateJwt = function () {
     FirstName: this.FirstName,
     LastName: this.LastName,
     EmailAdress: this.EmailAdress,
-
+    CellPhoneNumber: this.CellPhoneNumber,
     CompanyName: this.name,
     EmployeeID: this.EmployeeID,
     City: this.City,
