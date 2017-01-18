@@ -67,7 +67,9 @@ module.exports.login = function(req, res) {
     } else {
       // If user is not found
       res.status(401).json(info);
+      console.log(err);
     }
+
   })(req, res);
 
 };
