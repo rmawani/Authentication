@@ -25,6 +25,7 @@ module.exports.register = function(req, res) {
   user.CompanyName = req.body.CompanyName;
   user.EmployeeID = req.body.EmployeeID;
   user.City = req.body.City;
+  user.Location = req.body.Location;
   user.Province = req.body.Province;
   user.setPassword(req.body.password);
 

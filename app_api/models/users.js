@@ -38,6 +38,10 @@ var userSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  Location: {
+    type: String,
+    required: true
+  },
   Province: {
     type: String,
     required: true
@@ -75,6 +79,7 @@ userSchema.methods.generateJwt = function () {
     CompanyName: this.name,
     EmployeeID: this.EmployeeID,
     City: this.City,
+    Location: this.Location,
     Province: this.Province,
     exp: parseInt(expiry.getTime() / 1000)
   }, "hHztDiLKCz1i0eveemndIuLqS_gx9ML0"); // DO NOT KEEP YOUR SECRET IN THE CODE!

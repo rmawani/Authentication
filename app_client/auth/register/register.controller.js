@@ -16,6 +16,7 @@
       CompanyName: "",
       EmployeeID: "",
       City: "",
+      Location: "",
       Province: "",
       password : ""
     };

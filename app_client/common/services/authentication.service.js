@@ -44,6 +44,7 @@
           CompanyName: payload.CompanyName,
           EmployeeID: payload.EmployeeID,
           City: payload.City,
+          Location: payload.Location,
           Province : payload.Province
         };
       }
