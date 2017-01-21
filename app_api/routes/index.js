@@ -5,7 +5,7 @@ var jwt = require('express-jwt');
 require('./env');
 
 var auth = jwt({
-  secret: process.env.SECRET,
+  secret: 'hHztDiLKCz1i0eveemndIuLqS_gx9ML0',
   userProperty: 'payload'
 });
 
