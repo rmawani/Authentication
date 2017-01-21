@@ -84,7 +84,7 @@ userSchema.methods.generateJwt = function () {
     Location: this.Location,
     Province: this.Province,
     exp: parseInt(expiry.getTime() / 1000)
-  }, 'hHztDiLKCz1i0eveemndIuLqS_gx9ML0'); // DO NOT KEEP YOUR SECRET IN THE CODE!
+  }, process.env.MLAB_SECRET); // DO NOT KEEP YOUR SECRET IN THE CODE!
 };
 
 mongoose.model('User', userSchema);
