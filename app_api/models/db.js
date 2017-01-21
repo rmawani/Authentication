@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-require('env.js');
+require('./env');
 
 var gracefulShutdown;
 var dbURI = process.env.MONGODB;

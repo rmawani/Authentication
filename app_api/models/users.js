@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var crypto = require('crypto');
 var jwt = require('jsonwebtoken');
 
-require('env.js');
+require('./env');
 
 function toLower (str) {
     return str.toLowerCase();
