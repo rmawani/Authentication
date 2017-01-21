@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 //require('./env');
 
 var gracefulShutdown;
-var dbURI = 'mongodb://rmawani:Povray1!@ds111489.mlab.com:11489/authentication';
+var dbURI = process.env.MONGOLAB_URI;
 //if (process.env.NODE_ENV === 'production') {
 //  dbURI = process.env.MONGOLAB_URI;
 //}
