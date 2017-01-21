@@ -12,7 +12,7 @@ mongoose.connect(dbURI);
 
 // CONNECTION EVENTS
 mongoose.connection.on('connected', function() {
-  console.log('Mongoose connected to Authentication Server' //+ dbURI);
+  console.log('Mongoose connected to Authentication Server'); //+ dbURI);
 });
 mongoose.connection.on('error', function(err) {
   console.log('Mongoose connection error: ' + err);
