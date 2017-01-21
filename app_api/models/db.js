@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-require('./env');
+//require('./env');
 
 var gracefulShutdown;
 var dbURI = 'mongodb://rmawani:Povray1!@ds111489.mlab.com:11489/authentication';

@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var jwt = require('express-jwt');
 
-require('./env');
+//require('./env');
 
 var auth = jwt({
   secret: 'hHztDiLKCz1i0eveemndIuLqS_gx9ML0',
