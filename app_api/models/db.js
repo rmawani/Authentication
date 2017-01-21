@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 //require('./env');
 
 var gracefulShutdown;
-var dbURI = process.env.MONGODB_URI;
+var dbURI = 'mongodb://' + process.env.MLAB_USERNAME + ':' + process.env.MLAB_PASSWORD + '@' + process.env.MONGODB_URI + process.env.MLAB_DATABASE;
 //if (process.env.NODE_ENV === 'production') {
 //  dbURI = process.env.MONGODB_URI;
 //}
@@ -12,7 +12,7 @@ mongoose.connect(dbURI);
 
 // CONNECTION EVENTS
 mongoose.connection.on('connected', function() {
-  console.log('Mongoose connected to ' + dbURI);
+  console.log('Mongoose connected to Authentication Server' //+ dbURI);
 });
 mongoose.connection.on('error', function(err) {
   console.log('Mongoose connection error: ' + err);
