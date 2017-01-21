@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'mongodb://rmawani:Povray1!@ds111489.mlab.com:11489/authentication';
+var dbURI = process.env.MONGODB;
 //if (process.env.NODE_ENV === 'production') {
 //  dbURI = process.env.MONGOLAB_URI;
 //}
