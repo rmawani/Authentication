@@ -1,4 +1,7 @@
 var mongoose = require('mongoose');
+
+require('env.js');
+
 var gracefulShutdown;
 var dbURI = process.env.MONGODB;
 //if (process.env.NODE_ENV === 'production') {
